@@ -14,6 +14,7 @@ int main() {
     char mode[10];
     printf("Enter 'encrypt' or 'decrypt': ");
     scanf("%s", mode);
+	scanf("%*c"); // Consume the newline character left by scanf
 
     if (strcmp(mode, "encrypt") == 0) {
         char message[MAX_KEY_LENGTH];
